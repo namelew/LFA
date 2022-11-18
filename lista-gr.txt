@@ -1,0 +1,38 @@
+a) L(G) = { x | x  (a,b)* onde o número de b’s é par}
+
+S ::= aA| bB| Epslon
+A ::= aA| bB| Epslon
+B ::= aB| bA
+
+b) L(G) = { x | x  (a,b)* onde o número de b’s é impar}
+
+S ::= aA| bB
+A ::= aA| bB
+B ::= aB| bA| Epslon
+
+r) L(G) = {x | x  (0, 1, 2, ..., 9, “+”, “-”, “.”)+ tal que x é um número real}
+
+S ::= 0...9A | '+'D | '-'D
+A ::= 0...9B | '.'E | ','H| Epslon
+B ::= 0...9C | '.'E | ','H| Epslon
+C ::= '.'E | ','H| Epslon
+D ::= 0...9A
+E ::= 0...9F
+F ::= 0...9G
+G ::= 0...9C
+H ::= 0...9H | 0...9
+
+s) L(G) = {x | x  (0, 1)*, tal que o número de 1’s é múltiplo de 3 E o número de 0’s é par }
+
+S ::= 0A | 1B | Epslon
+A ::= 0S | 1C
+B ::= 0C | 1D
+C ::= 0B | 1E
+D ::= 0E | 1S
+E ::= 0D | 1A
+
+t) L(G) = {x | x  (a, b, c, d, e, f, i)* onde todas as vogais estejam ordenadas}
+
+S ::= aS | bS | cS | dS | eA | fS | iB | Epslon
+A ::= bA | cA | dA | eA | fA | iB | Epslon
+B ::= bB | cB | dB | fB | iB | Epslon

@@ -1,0 +1,5 @@
+<S> ::= a <A> | o <C>
+<A> ::= casa <B>| mala <B> | mala <D>
+<B> ::= caiu | partiu
+<C> ::= cão <B> | cão <D>
+<D> ::= sujou | lavou
